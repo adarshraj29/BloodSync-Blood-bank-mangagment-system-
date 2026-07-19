@@ -89,18 +89,14 @@ Whether you're an admin managing a blood bank or a user looking to donate or req
 
 ## 📸 Screenshots
 
-> 📌 *Replace the placeholder paths below with actual screenshots from your deployment.*
-
 | Page | Preview |
 |---|---|
 | 🏠 Landing Page | ![Landing Page](./screenshots/landing.png) |
 | 🔐 Login / Register | ![Auth](./screenshots/login.png) |
 | 📊 Admin Dashboard | ![Admin Dashboard](./screenshots/admin_dashboard.png) |
-| 🩸 Blood Stock | ![Blood Stock](./screenshots/blood_stock.png) |
+| 🩸 Blood Stock | ![Blood Stock](./screenshots/bloodstock.png) |
 | 👤 User Dashboard | ![User Dashboard](./screenshots/user_dashboard.png) |
-| 🚨 Emergency Request | ![Emergency](./screenshots/emergency.png) |
-
-> 💡 **Tip:** Add a `screenshots/` folder to your repo and drop in your `.png` files to make these appear automatically.
+| 🚨 Emergency Request | ![Emergency](./screenshots/emergency_bloodrequest.png) |
 
 ---
 
