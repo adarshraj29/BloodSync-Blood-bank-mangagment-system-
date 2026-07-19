@@ -1,0 +1,255 @@
+/*
+ * BloodSync Admin - Dark Mode Complete Fix v8
+ * Fixes: white table backgrounds, text visibility,
+ *        all pages in dark mode
+ */
+
+/* ── CSS Variables ensure all code using them works ──────── */
+body.adm-dark {
+    --aCard:#161b22; --aBorder:#30363d; --aText:#e6edf3;
+    --aHeading:#e6edf3; --aMuted:#8b949e; --aBg:#0d1117;
+    --aTableHead:#21262d; --aTableHover:rgba(192,57,43,0.08);
+    --aInputBg:#21262d; --aInputBorder:#30363d; --aInputText:#e6edf3;
+    --aAlertDanger:rgba(192,57,43,0.2); --aAlertDangerText:#ffaaaa;
+    --aAlertSuccess:rgba(25,135,84,0.2); --aAlertSuccessText:#aaffcc;
+    --aAlertWarning:rgba(255,193,7,0.15); --aAlertWarningText:#ffe066;
+    --aAlertInfo:rgba(13,110,253,0.15); --aAlertInfoText:#aad4ff;
+    --aProgress:#30363d; --aBgImgOpacity:0.15;
+    --aOverlay:rgba(13,17,23,0.91);
+    --aSidebarBg:#161b22; --aSidebarBorder:#30363d;
+    --aSidebarText:#c9d1d9; --aSidebarHover:rgba(192,57,43,0.15);
+    --aSidebarActive:#c0392b; --aSidebarActiveText:#ffffff;
+    --aSectionLabel:#484f58;
+    --aNavBg:linear-gradient(135deg,#1a0808 0%,#2d1010 100%);
+    --aNavText:#e6edf3;
+    --aStatRedBg:rgba(192,57,43,0.18); --aStatGreenBg:rgba(25,135,84,0.18);
+    --aStatBlueBg:rgba(13,110,253,0.18); --aStatOrangeBg:rgba(253,126,20,0.18);
+    --aBadgeBg:rgba(192,57,43,0.2); --aBadgeText:#ff9999;
+}
+
+/* ════════════════════════════════════════════════
+   THE CORE FIX: Bootstrap .table white backgrounds
+════════════════════════════════════════════════ */
+body.adm-dark .table,
+body.adm-dark .table > :not(caption) > * > *,
+body.adm-dark .table > tbody > tr > td,
+body.adm-dark .table > tbody > tr > th,
+body.adm-dark .table > thead > tr > td,
+body.adm-dark .table > tfoot > tr > td,
+body.adm-dark .table > tfoot > tr > th {
+    background-color: var(--aCard) !important;
+    color: var(--aText) !important;
+    border-color: var(--aBorder) !important;
+}
+body.adm-dark .table > thead > tr > th {
+    background-color: var(--aTableHead) !important;
+    color: var(--aMuted) !important;
+}
+body.adm-dark .table > tbody > tr:hover > *,
+body.adm-dark .table > tbody > tr:hover {
+    background-color: var(--aTableHover) !important;
+    color: var(--aText) !important;
+}
+/* "No results" empty rows */
+body.adm-dark .table td.text-center {
+    background-color: var(--aCard) !important;
+    color: var(--aMuted) !important;
+}
+/* Table inside card */
+body.adm-dark .card .table > :not(caption) > * > *,
+body.adm-dark .bs-table-card .table > :not(caption) > * > * {
+    background-color: var(--aCard) !important;
+    color: var(--aText) !important;
+}
+
+/* ════════════════════════════════════════════════
+   CARD FIXES
+════════════════════════════════════════════════ */
+body.adm-dark .card,
+body.adm-dark .card-body {
+    background-color: var(--aCard) !important;
+    border-color: var(--aBorder) !important;
+    color: var(--aText) !important;
+}
+body.adm-dark .card-header {
+    background-color: var(--aCard) !important;
+    border-bottom-color: var(--aBorder) !important;
+    color: var(--aHeading) !important;
+}
+body.adm-dark .card-footer {
+    background-color: var(--aCard) !important;
+    border-top-color: var(--aBorder) !important;
+}
+
+/* ════════════════════════════════════════════════
+   TEXT — Every element readable in dark mode
+════════════════════════════════════════════════ */
+body.adm-dark h1,body.adm-dark h2,body.adm-dark h3,
+body.adm-dark h4,body.adm-dark h5,body.adm-dark h6 {
+    color: var(--aHeading) !important;
+}
+body.adm-dark p    { color: var(--aText) !important; }
+body.adm-dark span { color: inherit; }
+body.adm-dark td,body.adm-dark th,body.adm-dark li { color: var(--aText) !important; }
+body.adm-dark label { color: var(--aHeading) !important; }
+body.adm-dark small { color: var(--aMuted) !important; }
+body.adm-dark strong,body.adm-dark b { color: var(--aText) !important; }
+body.adm-dark .fw-semibold,body.adm-dark .fw-bold { color: var(--aText) !important; }
+body.adm-dark .page-title { color: var(--aHeading) !important; }
+body.adm-dark .text-muted  { color: var(--aMuted) !important; }
+body.adm-dark .text-danger  { color: #ff7b7b !important; }
+body.adm-dark .text-success { color: #56d364 !important; }
+body.adm-dark .text-warning { color: #e3b341 !important; }
+body.adm-dark .text-primary { color: #79a8ff !important; }
+body.adm-dark .text-info    { color: #aad4ff !important; }
+
+/* ════════════════════════════════════════════════
+   SIDEBAR
+════════════════════════════════════════════════ */
+body.adm-dark .sidebar {
+    background: var(--aSidebarBg) !important;
+    border-right-color: var(--aSidebarBorder) !important;
+}
+body.adm-dark .sidebar-brand { color: var(--aHeading) !important; border-bottom-color: var(--aSidebarBorder) !important; }
+body.adm-dark .sidebar-section { color: var(--aSectionLabel) !important; }
+body.adm-dark .sidebar-nav .nav-link { color: var(--aSidebarText) !important; }
+body.adm-dark .sidebar-nav .nav-link:hover { background: var(--aSidebarHover) !important; color: #c0392b !important; }
+body.adm-dark .sidebar-nav .nav-link.active { background: var(--aSidebarActive) !important; color: var(--aSidebarActiveText) !important; }
+
+/* ════════════════════════════════════════════════
+   FORMS & INPUTS
+════════════════════════════════════════════════ */
+body.adm-dark .form-control,
+body.adm-dark .form-select,
+body.adm-dark input[type="text"],
+body.adm-dark input[type="email"],
+body.adm-dark input[type="password"],
+body.adm-dark input[type="number"],
+body.adm-dark input[type="tel"],
+body.adm-dark input[type="date"],
+body.adm-dark input[type="time"],
+body.adm-dark textarea {
+    background-color: var(--aInputBg) !important;
+    border-color: var(--aInputBorder) !important;
+    color: var(--aInputText) !important;
+}
+body.adm-dark .form-control:focus,
+body.adm-dark .form-select:focus {
+    background-color: var(--aInputBg) !important;
+    border-color: #c0392b !important;
+    color: var(--aInputText) !important;
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.15) !important;
+}
+body.adm-dark ::placeholder { color: var(--aMuted) !important; opacity:1 !important; }
+body.adm-dark .input-group-text {
+    background-color: var(--aTableHead) !important;
+    border-color: var(--aInputBorder) !important;
+    color: var(--aMuted) !important;
+}
+body.adm-dark .form-label { color: var(--aHeading) !important; }
+body.adm-dark .form-text  { color: var(--aMuted) !important; }
+body.adm-dark select option { background: #161b22 !important; color: #e6edf3 !important; }
+body.adm-dark input[type="date"] { color-scheme: dark; }
+
+/* ════════════════════════════════════════════════
+   BADGES — All types readable in dark
+════════════════════════════════════════════════ */
+body.adm-dark .bg-badge { background: rgba(192,57,43,0.22) !important; color: #ff9999 !important; }
+body.adm-dark .badge.bg-success  { background: #1a4d2e !important; color: #56d364 !important; }
+body.adm-dark .badge.bg-danger   { background: #4d1a1a !important; color: #ff9999 !important; }
+body.adm-dark .badge.bg-warning  { background: #4d3d00 !important; color: #e3b341 !important; }
+body.adm-dark .badge.bg-primary  { background: #1a2d4d !important; color: #79a8ff !important; }
+body.adm-dark .badge.bg-secondary{ background: #2d2d3a !important; color: #c9d1d9 !important; }
+body.adm-dark .badge.bg-info     { background: #0c2d4d !important; color: #aad4ff !important; }
+body.adm-dark .badge.bg-light    { background: #30363d !important; color: #e6edf3 !important; }
+body.adm-dark .badge-normal   { background: rgba(25,135,84,0.2) !important; color: #56d364 !important; }
+body.adm-dark .badge-urgent   { background: rgba(253,126,20,0.2)!important; color: #fd9a3d !important; }
+body.adm-dark .badge-critical { background: rgba(220,53,69,0.2) !important; color: #ff7b7b !important; }
+
+/* ════════════════════════════════════════════════
+   ALERTS
+════════════════════════════════════════════════ */
+body.adm-dark .alert-success { background: var(--aAlertSuccess) !important; color: var(--aAlertSuccessText) !important; border:none !important; }
+body.adm-dark .alert-danger  { background: var(--aAlertDanger)  !important; color: var(--aAlertDangerText)  !important; border:none !important; }
+body.adm-dark .alert-warning { background: var(--aAlertWarning) !important; color: var(--aAlertWarningText) !important; border:none !important; }
+body.adm-dark .alert-info    { background: var(--aAlertInfo)    !important; color: var(--aAlertInfoText)    !important; border:none !important; }
+body.adm-dark .alert .btn-close { filter: invert(1) !important; }
+
+/* ════════════════════════════════════════════════
+   BUTTONS
+════════════════════════════════════════════════ */
+body.adm-dark .btn-outline-secondary { color: #8b949e !important; border-color: #30363d !important; }
+body.adm-dark .btn-outline-primary   { color: #79a8ff !important; border-color: #79a8ff !important; }
+body.adm-dark .btn-outline-success   { color: #56d364 !important; border-color: #56d364 !important; }
+body.adm-dark .btn-outline-danger    { color: #ff7b7b !important; border-color: #ff7b7b !important; }
+body.adm-dark .btn-outline-secondary:hover { background: rgba(139,148,158,0.12) !important; }
+body.adm-dark .btn-outline-primary:hover   { background: rgba(121,168,255,0.12) !important; }
+body.adm-dark .btn-outline-success:hover   { background: rgba(86,211,100,0.12)  !important; }
+body.adm-dark .btn-outline-danger:hover    { background: rgba(255,123,123,0.12) !important; }
+body.adm-dark .btn-light { background: var(--aTableHead) !important; color: var(--aText) !important; border-color: var(--aBorder) !important; }
+
+/* ════════════════════════════════════════════════
+   STOCK PAGE SPECIFIC
+════════════════════════════════════════════════ */
+body.adm-dark .stock-critical { color: #ff7b7b !important; font-weight:700; }
+body.adm-dark .stock-low      { color: #e3b341 !important; font-weight:600; }
+body.adm-dark .stock-ok       { color: #56d364 !important; font-weight:600; }
+
+/* ════════════════════════════════════════════════
+   EMERGENCY PAGE — inline style overrides
+════════════════════════════════════════════════ */
+body.adm-dark [style*="background:#fff0ee"],
+body.adm-dark [style*="background: #fff0ee"],
+body.adm-dark [style*="background:#fff8f8"],
+body.adm-dark [style*="background: #fff8f8"] {
+    background: rgba(192,57,43,0.15) !important;
+}
+body.adm-dark [style*="background:#fff5f4"],
+body.adm-dark [style*="background: #fff5f4"] {
+    background: rgba(192,57,43,0.1) !important;
+}
+body.adm-dark .border-danger { border-color: rgba(192,57,43,0.5) !important; }
+
+/* ════════════════════════════════════════════════
+   INLINE BACKGROUND OVERRIDES (dynamic rows)
+════════════════════════════════════════════════ */
+body.adm-dark [style*="background:rgba(220,53,69,0.04)"],
+body.adm-dark [style*="background: rgba(220,53,69,0.04)"] {
+    background: rgba(192,57,43,0.12) !important;
+}
+body.adm-dark [style*="background:rgba(192,57,43,0.04)"],
+body.adm-dark [style*="background: rgba(192,57,43,0.04)"] {
+    background: rgba(192,57,43,0.12) !important;
+}
+
+/* ════════════════════════════════════════════════
+   PROGRESS BARS
+════════════════════════════════════════════════ */
+body.adm-dark .progress { background: var(--aProgress) !important; }
+body.adm-dark .progress-bar.bg-success { background: #56d364 !important; }
+body.adm-dark .progress-bar.bg-warning { background: #e3b341 !important; }
+body.adm-dark .progress-bar.bg-danger  { background: #ff7b7b !important; }
+
+/* ════════════════════════════════════════════════
+   NAV PILLS & TABS
+════════════════════════════════════════════════ */
+body.adm-dark .nav-pills .nav-link { color: var(--aText) !important; }
+body.adm-dark .nav-pills .nav-link.active { background: #c0392b !important; color: white !important; }
+body.adm-dark .nav-tabs .nav-link { color: var(--aText) !important; border-color: var(--aBorder) !important; }
+body.adm-dark .nav-tabs .nav-link.active { background: var(--aCard) !important; color: #c0392b !important; }
+
+/* ════════════════════════════════════════════════
+   MISC OVERRIDES
+════════════════════════════════════════════════ */
+body.adm-dark .dropdown-menu { background: var(--aCard) !important; border-color: var(--aBorder) !important; }
+body.adm-dark .dropdown-item { color: var(--aText) !important; }
+body.adm-dark .dropdown-item:hover { background: var(--aSidebarHover) !important; }
+body.adm-dark .modal-content { background: var(--aCard) !important; color: var(--aText) !important; border-color: var(--aBorder) !important; }
+body.adm-dark .modal-header,.adm-dark .modal-footer { border-color: var(--aBorder) !important; }
+body.adm-dark .btn-close { filter: invert(1) grayscale(100%) !important; }
+body.adm-dark .border { border-color: var(--aBorder) !important; }
+body.adm-dark .border-top,.adm-dark .border-bottom { border-color: var(--aBorder) !important; }
+body.adm-dark hr { border-color: var(--aBorder) !important; }
+body.adm-dark .page-link { background: var(--aCard) !important; border-color: var(--aBorder) !important; color: var(--aText) !important; }
+body.adm-dark .page-item.active .page-link { background: #c0392b !important; border-color: #c0392b !important; }
+body.adm-dark canvas { background: transparent !important; }

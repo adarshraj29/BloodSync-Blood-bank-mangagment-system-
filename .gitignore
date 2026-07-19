@@ -1,0 +1,22 @@
+# PHP / XAMPP
+/vendor/
+composer.lock
+
+# Sensitive configuration (rename these to .example before pushing)
+config/db.php
+config/mail_config.php
+
+# Logs
+*.log
+/logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (if large)
+# uploads/
