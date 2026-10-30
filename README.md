@@ -20,7 +20,7 @@
 ![XAMPP](https://img.shields.io/badge/XAMPP-Compatible-FB7A24?style=for-the-badge&logo=apache&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![College Project](https://img.shields.io/badge/BCA-Final%20Year%20Project-blue?style=for-the-badge)
+![College Project](https://img.shields.io/badge/MCA-Project-blue?style=for-the-badge)
 
 </div>
 
@@ -32,9 +32,9 @@
 
 Whether you're an admin managing a blood bank or a user looking to donate or request blood, BloodSync has you covered.
 
-> 🎓 **College:** CIMAGE Professional College, Patna  
-> 🧑‍🎓 **Course:** Bachelor of Computer Applications (BCA)  
-> 📅 **Academic Year:** 2023 – 2026
+> 🎓 **College:** Chandigarh University  
+> 🧑‍🎓 **Course:** Master of Computer Applications (MCA)  
+> 📅 **Academic Year:** 2026 – 2028
 
 ---
 
@@ -111,8 +111,8 @@ Make sure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/BCA-310-22989-AdarshRaj/BloodSync.git
-cd BloodSync
+git clone https://github.com/adarshraj29/BloodSync-Blood-bank-mangagment-system-.git
+cd BloodSync-Blood-bank-mangagment-system-
 ```
 
 Move the project into your XAMPP `htdocs` folder:
@@ -333,10 +333,12 @@ See the full [LICENSE](./LICENSE) file for details.
 | | |
 |---|---|
 | 👤 **Author** | Adarsh Raj |
-| 🎓 **Institution** | CIMAGE Professional College, Patna |
-| 📧 **Email** | [adarsh.bcastudent23.22989@cimage.in](mailto:adarsh.bcastudent23.22989@cimage.in) |
-| 🐙 **GitHub** | [@BCA-310-22989-AdarshRaj](https://github.com/BCA-310-22989-AdarshRaj) |
-| 📦 **Repository** | [BloodSync](https://github.com/BCA-310-22989-AdarshRaj/BloodSync) |
+| 🎓 **Institution** | Chandigarh University |
+| 🧑‍🎓 **Course** | Master of Computer Applications (MCA) |
+| 📅 **Academic Year** | 2026 – 2028 |
+| 📧 **Email** | [rajadarsh232@gmail.com](mailto:rajadarsh232@gmail.com) |
+| 🐙 **GitHub** | [@adarshraj29](https://github.com/adarshraj29) |
+| 📦 **Repository** | [BloodSync](https://github.com/adarshraj29/BloodSync-Blood-bank-mangagment-system-) |
 
 </div>
 
@@ -346,11 +348,11 @@ See the full [LICENSE](./LICENSE) file for details.
 
 ### 🩸 *"Every drop counts. Every donor matters."*
 
-Made with ❤️ by **Adarsh Raj** as part of the BCA Final Year Project
+Made with ❤️ by **Adarsh Raj** as part of the MCA Project (Chandigarh University)
 
 ⭐ If you found this project helpful or inspiring, please **star the repo** — it means a lot!
 
-[![GitHub stars](https://img.shields.io/github/stars/BCA-310-22989-AdarshRaj/BloodSync?style=social)](https://github.com/BCA-310-22989-AdarshRaj/BloodSync/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/BCA-310-22989-AdarshRaj/BloodSync?style=social)](https://github.com/BCA-310-22989-AdarshRaj/BloodSync/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/adarshraj29/BloodSync-Blood-bank-mangagment-system-?style=social)](https://github.com/adarshraj29/BloodSync-Blood-bank-mangagment-system-/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/adarshraj29/BloodSync-Blood-bank-mangagment-system-?style=social)](https://github.com/adarshraj29/BloodSync-Blood-bank-mangagment-system-/network/members)
 
 </div>
